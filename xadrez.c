@@ -1,32 +1,43 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+// Desafio de Super Trunfo
+// Este código inicial serve como base para o desenvolvimento de duas cartas do super trunfo (Cada uma contendo 1 cidade e suas informações).
+// O objetivo é utilizar entrada e saída de dados (printf e scanf).
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    //criando variáveis carta A e declarando as que não serão alteradas
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    char state = 'A';
+    char cardCode[10] = "01";
+    char cityName[40];
+    int population;
+    float area; 
+    float PIB;
+    int tourism;
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    //criando variáveis carta B e declarando as que não serão alteradas
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    char stateTwo = 'B';
+    char cardCodeTwo[10] = "02";
+    char cityNameTwo[40];
+    int populationTwo;
+    float areaTwo; 
+    float PIBTwo;
+    int tourismTwo;
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+   
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    //pedir dados da carta A
+    printf("Digite o nome da primeira cidade (sem espaço): \n");
+    scanf("%s", cityName);
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    //pedir dados da carta B
+    printf("Digite o nome da segunda cidade (sem espaço): \n");
+    scanf("%s", cityNameTwo);
+
+    //mostrandro dadosBra
+    printf("\nCarta A - Estado %c - Cidade: %s\n", state, cityName);
+    printf("Carta B - Estado %c - Cidade: %s\n", stateTwo, cityNameTwo);
 
     return 0;
 }
